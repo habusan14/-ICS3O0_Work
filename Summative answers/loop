@@ -1,0 +1,40 @@
+import turtle
+myPen = turtle.Turtle()
+myPen.speed(100)
+myPen.shape("arrow")
+
+myPen.color("red")
+myPen.delay(1) #Set the speed of the turtle
+
+for i in range(0,11):
+    yFrom=10-i
+    xTo=i
+    myPen.penup()
+    myPen.goto(0,20*yFrom)
+    myPen.pendown()
+    myPen.goto(20*xTo,0)
+for i in range(0,11):
+    yFrom=10-i
+    xTo=i
+    myPen.penup()
+    myPen.goto(0,-20*yFrom)
+    myPen.pendown()
+    myPen.goto(20*xTo,0)
+for i in range(0,11):
+    yFrom=10-i
+    xTo=i
+    myPen.penup()
+    myPen.goto(-0,-20*yFrom)
+    myPen.pendown()
+    myPen.goto(-20*xTo,-0)
+for i in range(0,11):
+    yFrom=10-i
+    xTo=i
+    myPen.penup()
+    myPen.goto(-0,20*yFrom)
+    myPen.pendown()
+    myPen.goto(-20*xTo,-0)
+
+
+
+
